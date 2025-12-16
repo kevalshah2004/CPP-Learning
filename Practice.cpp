@@ -348,9 +348,13 @@ int main(){
     Cylinder c1;
     c1.setHeight(2);
     c1.setRadius(2);
-    cout << c1.volume();
-    
+    cout << c1.volume() << endl;
 
+    Cylinder c2;
+    Cylinder *p_c2 = &c2;
+    p_c2->setHeight(5);
+    cout << (*p_c2).getHeight() << endl;
+    delete p_c2;
     return 0;
 }
 
