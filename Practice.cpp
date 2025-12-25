@@ -345,16 +345,25 @@ int main(){
     // cout << a.a << endl;
     // cout << a.b;
 
-    Cylinder c1;
-    c1.setHeight(2);
-    c1.setRadius(2);
-    cout << c1.volume() << endl;
+    // Cylinder c1;
+    // c1.setHeight(2);
+    // c1.setRadius(2);
+    // cout << c1.volume() << endl;
 
-    Cylinder c2;
-    Cylinder *p_c2 = &c2;
-    p_c2->setHeight(5);
-    cout << (*p_c2).getHeight() << endl;
-    delete p_c2;
+    // Cylinder c2;
+    // Cylinder *p_c2 = &c2;
+    // p_c2->setHeight(5);
+    // cout << (*p_c2).getHeight() << endl;
+
+    //destructor is called for the object that is created most recertly
+
+    // delete p_c2;
+
+    // this keyword used to point to current object
+    // you can create chain of calls
+    // c1.setHeight().setRadius() -> when function return reference (&Cylinder)
+    // c1->setHeight().setRadius() -> when function return refernce (*Cylinder)
+
     return 0;
 }
 
