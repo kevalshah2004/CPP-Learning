@@ -9,6 +9,11 @@
 // #include <concepts> // checkout 4 requirements in concepts, combining concepts
 // #include "operations.h"
 
+
+struct Cat{
+
+};
+
 using namespace std;
 
 // class A{
@@ -363,6 +368,9 @@ int main(){
     // you can create chain of calls
     // c1.setHeight().setRadius() -> when function return reference (&Cylinder)
     // c1->setHeight().setRadius() -> when function return refernce (*Cylinder)
+
+    //in classes, members are private by default
+    // in struct memebers are public by default
 
     return 0;
 }
